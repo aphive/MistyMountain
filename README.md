@@ -13,9 +13,11 @@
 
 (◟ᅇ)◜
 
-I wanted to get some experience with Tiling Window Managers and see that sddm is a common part of lots of tool-belt of others that have been in the game for a while. After getting my first look at the [Nord](https://www.nordtheme.com/) style-guide I decided I wanted something nice looking for my login screen, plus, [ChrisTitusTech](https://github.com/ChrisTitusTech) is working on a sweet OS that I am using, so easy decision.
+I wanted to get some experience with Tiling Window Managers and seeing that sddm is a common part of most builds I've seen, I wanted to give customizing this part of my system. After getting my first look at the [Nord](https://www.nordtheme.com/) style-guide I decided I wanted something nice looking for my login screen, plus, [ChrisTitusTech](https://github.com/ChrisTitusTech) is working on a sweet OS that I am using, so easy decision.
 
-I decided that since I was the only one using this computer I would use no login screen to keep it very minimal. You are able to have multiple users but each person will type in their username and password to log in.
+Since I was the only one using this computer, there is no need to have it display user pics. You are able to have multiple users but each person will type in their username and password to log in. However, if enough people use this and there is enough want for it, I can look into it or accept a pull request for the change.
+
+If you see anything that can be made better, feel free to make a pull request with the update.
 
 ## Getting up and running
 
@@ -40,6 +42,12 @@ mv components/*.tff ~/.fonts/
 ```
 sudo fc-cache -f -v
 ```
+* Move the theme directory into place
+```
+cd ..
+sudo mv MistyMountain /usr/share/sddm/themes/
+```
+* Restart your computer
 
 ## To Do
 
