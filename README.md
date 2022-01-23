@@ -1,23 +1,40 @@
-# MistyMountain
-
-A misty theme for SDDM
+```
+      /\                  /\
+     /  \  /\            /  \  /\ Far over the Misty Mountains cold
+  /\/    \/  \    /\    / /\/\/  \ To dungeons deep and caverns old
+ /   /\/\  /\/\  /  \  /\/    \   \ We must away, ere break of day
+/\/\/    \/    \/    \/        \   \ To find our long forgotten gold
+    M I S T Y      M O U N T A I N       
+                     an sddm theme
+********************************************************************
+```
 
 ## Why build this?
 
-I wanted to get some experience with Tiling Window Managers and see that sddm is a common part of lots of toolbelt of others that have been in the game for a while.
+(◟ᅇ)◜
 
- I like the [Nord](https://www.nordtheme.com/) style-guide and wanted something nice looking for my login screen, plus <a class="d-inline-block" data-hovercard-type="user" data-hovercard-url="/users/ChrisTitusTech/hovercard" data-octo-click="hovercard-link-click" data-octo-dimensions="link_type:self" href="https://github.com/ChrisTitusTech/"><img class="avatar avatar-user" src="https://avatars.githubusercontent.com/u/7896101?s=80&amp;v=4" width="30" height="30" alt="@ChrisTitusTech"></a> is working on a sweet OS that I am using, so easy decision.
+I wanted to get some experience with Tiling Window Managers and see that sddm is a common part of lots of tool-belt of others that have been in the game for a while. AFter getting my first look at the  [Nord](https://www.nordtheme.com/) style-guide I decided I wanted something nice looking for my login screen, plus, [ChrisTitusTech](https://github.com/ChrisTitusTech) is working on a sweet OS that I am using, so easy decision.
 
- I wanted to keep this minimal so no user picture
+I decided that since I was the only one using this computer I would use no login screen to keep it very minimal. You are able to have multiple users but each person will type in their username and password to log in.
 
-## Requirements
+## Getting up and running
 
-You will need to install the included fonts by placing them into `/usr/share/fonts`.
-
-Install the following package:
-
+* Install the following package:
 ```
-sudo apt install qml-module-qtquick-controls2
+sudo apt install dit qml-module-qtquick-layouts qml-module-qtquick-controls2 qml-module-qtquick-templates2 qml-module-qtgraphicaleffects
+```
+* Cone the repository
+```
+git clone https://github.com/aphive/MistyMountain.git
+```
+* Cd into the cloned repo:
+```
+cd MistyMountain
+```
+* Install fonts
+```
+mkdir ~/.fonts
+mv components/*.tff ~/.fonts/
 ```
 
 ## To Do
@@ -25,5 +42,4 @@ sudo apt install qml-module-qtquick-controls2
 The following items need to be added or looked into to get them working.
 
 * Set time to not be 24hr format
-* Make username text larger for readability
-* 
+* Make username and password textbox content larger for readability
